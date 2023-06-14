@@ -1,113 +1,226 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Animais Fantásticos</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style.css" />
     <script src="js/script.js" defer type="module"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="grid-container">
-        <nav class="menu js-menu">
-            <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
-            <ul data-menu="list" id="menu">
-                <li><a href="#animais">Animais</a></li>
-                <li data-dropdown>
-                    <a href="sobre.html">Sobre</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="empresa.html">A empresa</a></li>
-                        <li><a href="equipe.html">Equipe</a></li>
-                        <li><a href="socios.html">Sócios</a></li>
-                        <li><a href="investidores.html">Investidores</a></li>
-                    </ul>
-                </li>
-                <li><a href="#faq">Faq</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="login.html" data-modal="abrir">Login</a></li>
+      <nav class="menu js-menu">
+        <button data-menu="button" aria-expanded="false" aria-controls="menu">
+          Menu
+        </button>
+        <ul data-menu="list" id="menu">
+          <li><a href="#animais">Animais</a></li>
+          <li data-dropdown>
+            <a href="sobre.html">Sobre</a>
+            <ul class="dropdown-menu">
+              <li><a href="empresa.html">A empresa</a></li>
+              <li><a href="equipe.html">Equipe</a></li>
+              <li><a href="socios.html">Sócios</a></li>
+              <li><a href="investidores.html">Investidores</a></li>
             </ul>
-        </nav>
-        <section class="grid-section animais js-scroll" id="animais">
-            <h1 class="titulo">Animais Fantásticos</h1>
-            <ul class="animais-lista js-tabmenu">
-                <li>
-                    <img src="img/imagem1.jpg">
-                </li>
-                <li>
-                    <img src="img/imagem2.jpg">
-                </li>
-                <li>
-                    <img src="img/imagem3.jpg">
-                </li>
-                <li>
-                    <img src="img/imagem4.jpg">
-                </li>
-                <li>
-                    <img src="img/imagem5.jpg">
-                </li>
-                <li>
-                    <img src="img/imagem6.jpg">
-                </li>
-            </ul>
-            <div class="animais-descricao js-tabcontent">
-                <section data-anime="show-right" class="ativo show-right">
-                    <h2>Raposa</h2>
-                    <p>Raposas são pequenos a médios mamíferos onívoros pertencentes a vários gêneros da família Canidae. As raposas têm o crânio achatado, orelhas triangulares verticais, focinho pontiagudo e ligeiramente arrebitado e uma cauda longa e espessa.</p>
-                    <p>Doze espécies pertencem ao grupo monofilético de "raposas verdadeiras" do gênero Vulpes. Aproximadamente outras 25 espécies atuais ou extintas são parte do grupo parafilético das raposas sul-americanas ou do grupo periférico, que consiste na raposa-orelhas-de-morcego, raposa-cinzenta e raposa-das-ilhas.</p>
-                    <p>As raposas vivem em todos os continentes, exceto a Antártida. De longe, a espécie mais comum e difundida de raposa é a raposa vermelha (Vulpes vulpes) com cerca de 47 subespécies reconhecidas</p>
-                </section>
-                <section data-anime="show-down">
-                    <h2>Esquilo</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo tempore ut porro, alias illo numquam dolorem assumenda nobis explicabo error culpa quisquam reprehenderit dignissimos maxime placeat repellendus nihil nesciunt quam!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptatibus laboriosam similique dolorum perspiciatis. Quidem ad officiis, totam adipisci sapiente dicta quae libero quos aut provident quas mollitia odio voluptas, doloremque placeat voluptates deserunt vero?</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod inventore maxime sunt natus id repudiandae similique accusantium exercitationem assumenda, et dicta aliquid voluptas earum laborum! Id cum reprehenderit hic quidem!</p>
-                </section>
-                <section data-anime="show-right">
-                    <h2>Urso</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo tempore ut porro, alias illo numquam dolorem assumenda nobis explicabo error culpa quisquam reprehenderit dignissimos maxime placeat repellendus nihil nesciunt quam!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptatibus laboriosam similique dolorum perspiciatis. Quidem ad officiis, totam adipisci sapiente dicta quae libero quos aut provident quas mollitia odio voluptas, doloremque placeat voluptates deserunt vero?</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod inventore maxime sunt natus id repudiandae similique accusantium exercitationem assumenda, et dicta aliquid voluptas earum laborum! Id cum reprehenderit hic quidem!</p>
-                </section>
-                <section data-anime="show-down">
-                    <h2>Lobo</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo tempore ut porro, alias illo numquam dolorem assumenda nobis explicabo error culpa quisquam reprehenderit dignissimos maxime placeat repellendus nihil nesciunt quam!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptatibus laboriosam similique dolorum perspiciatis. Quidem ad officiis, totam adipisci sapiente dicta quae libero quos aut provident quas mollitia odio voluptas, doloremque placeat voluptates deserunt vero?</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod inventore maxime sunt natus id repudiandae similique accusantium exercitationem assumenda, et dicta aliquid voluptas earum laborum! Id cum reprehenderit hic quidem!</p>
-                </section>
-                <section data-anime="show-right">
-                    <h2>Macaco</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo tempore ut porro, alias illo numquam dolorem assumenda nobis explicabo error culpa quisquam reprehenderit dignissimos maxime placeat repellendus nihil nesciunt quam!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptatibus laboriosam similique dolorum perspiciatis. Quidem ad officiis, totam adipisci sapiente dicta quae libero quos aut provident quas mollitia odio voluptas, doloremque placeat voluptates deserunt vero?</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod inventore maxime sunt natus id repudiandae similique accusantium exercitationem assumenda, et dicta aliquid voluptas earum laborum! Id cum reprehenderit hic quidem!</p>
-                </section>
-                <section data-anime="show-down">
-                    <h2>Leão</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo tempore ut porro, alias illo numquam dolorem assumenda nobis explicabo error culpa quisquam reprehenderit dignissimos maxime placeat repellendus nihil nesciunt quam!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptatibus laboriosam similique dolorum perspiciatis. Quidem ad officiis, totam adipisci sapiente dicta quae libero quos aut provident quas mollitia odio voluptas, doloremque placeat voluptates deserunt vero?</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod inventore maxime sunt natus id repudiandae similique accusantium exercitationem assumenda, et dicta aliquid voluptas earum laborum! Id cum reprehenderit hic quidem!</p>
-                </section>
-            </div>
-        </section>
-        <section class="grid-section faq js-scroll" id="faq">
-            <h1 class="titulo">FAQ</h1>
-            <dl class="faq-lista js-accordion">
-                <dt>Qual a idade dos animais?</dt>
-                <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia harum, quia placeat amet explicabo blanditiis quam soluta veritatis? Fuga, quod.</dd>
-                <dt>Eles são fantásticos?</dt>
-                <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum necessitatibus cumque accusamus laboriosam rem corrupti? Nemo at pariatur officia ducimus!</dd>
-                <dt>Qual a diferença?</dt>
-                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro obcaecati ducimus atque, laborum facilis alias, deserunt rerum, incidunt aut praesentium maxime tempore labore harum officiis?</dd>
-        
-                <dt>Como proteger?</dt>
-                <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores deleniti sapiente omnis qui voluptatibus sint! Perferendis quisquam nisi, veniam earum dolores in sequi officiis animi.</dd>
-            </dl>
-        </section>
+          </li>
+          <li><a href="#faq">Faq</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="login.html" data-modal="abrir">Login</a></li>
+        </ul>
+      </nav>
+      <section class="grid-section animais js-scroll" id="animais">
+        <h1 class="titulo">Animais Fantásticos</h1>
+        <ul class="animais-lista js-tabmenu">
+          <li>
+            <img src="img/imagem1.jpg" />
+          </li>
+          <li>
+            <img src="img/imagem2.jpg" />
+          </li>
+          <li>
+            <img src="img/imagem3.jpg" />
+          </li>
+          <li>
+            <img src="img/imagem4.jpg" />
+          </li>
+          <li>
+            <img src="img/imagem5.jpg" />
+          </li>
+          <li>
+            <img src="img/imagem6.jpg" />
+          </li>
+        </ul>
+        <div class="animais-descricao js-tabcontent">
+          <section data-anime="show-right" class="ativo show-right">
+            <h2>Raposa</h2>
+            <p>
+              Raposas são pequenos a médios mamíferos onívoros pertencentes a
+              vários gêneros da família Canidae. As raposas têm o crânio
+              achatado, orelhas triangulares verticais, focinho pontiagudo e
+              ligeiramente arrebitado e uma cauda longa e espessa.
+            </p>
+            <p>
+              Doze espécies pertencem ao grupo monofilético de "raposas
+              verdadeiras" do gênero Vulpes. Aproximadamente outras 25 espécies
+              atuais ou extintas são parte do grupo parafilético das raposas
+              sul-americanas ou do grupo periférico, que consiste na
+              raposa-orelhas-de-morcego, raposa-cinzenta e raposa-das-ilhas.
+            </p>
+            <p>
+              As raposas vivem em todos os continentes, exceto a Antártida. De
+              longe, a espécie mais comum e difundida de raposa é a raposa
+              vermelha (Vulpes vulpes) com cerca de 47 subespécies reconhecidas
+            </p>
+          </section>
+          <section data-anime="show-down">
+            <h2>Esquilo</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              tempore ut porro, alias illo numquam dolorem assumenda nobis
+              explicabo error culpa quisquam reprehenderit dignissimos maxime
+              placeat repellendus nihil nesciunt quam!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus voluptatibus laboriosam similique dolorum perspiciatis.
+              Quidem ad officiis, totam adipisci sapiente dicta quae libero quos
+              aut provident quas mollitia odio voluptas, doloremque placeat
+              voluptates deserunt vero?
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+              inventore maxime sunt natus id repudiandae similique accusantium
+              exercitationem assumenda, et dicta aliquid voluptas earum laborum!
+              Id cum reprehenderit hic quidem!
+            </p>
+          </section>
+          <section data-anime="show-right">
+            <h2>Urso</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              tempore ut porro, alias illo numquam dolorem assumenda nobis
+              explicabo error culpa quisquam reprehenderit dignissimos maxime
+              placeat repellendus nihil nesciunt quam!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus voluptatibus laboriosam similique dolorum perspiciatis.
+              Quidem ad officiis, totam adipisci sapiente dicta quae libero quos
+              aut provident quas mollitia odio voluptas, doloremque placeat
+              voluptates deserunt vero?
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+              inventore maxime sunt natus id repudiandae similique accusantium
+              exercitationem assumenda, et dicta aliquid voluptas earum laborum!
+              Id cum reprehenderit hic quidem!
+            </p>
+          </section>
+          <section data-anime="show-down">
+            <h2>Lobo</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              tempore ut porro, alias illo numquam dolorem assumenda nobis
+              explicabo error culpa quisquam reprehenderit dignissimos maxime
+              placeat repellendus nihil nesciunt quam!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus voluptatibus laboriosam similique dolorum perspiciatis.
+              Quidem ad officiis, totam adipisci sapiente dicta quae libero quos
+              aut provident quas mollitia odio voluptas, doloremque placeat
+              voluptates deserunt vero?
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+              inventore maxime sunt natus id repudiandae similique accusantium
+              exercitationem assumenda, et dicta aliquid voluptas earum laborum!
+              Id cum reprehenderit hic quidem!
+            </p>
+          </section>
+          <section data-anime="show-right">
+            <h2>Macaco</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              tempore ut porro, alias illo numquam dolorem assumenda nobis
+              explicabo error culpa quisquam reprehenderit dignissimos maxime
+              placeat repellendus nihil nesciunt quam!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus voluptatibus laboriosam similique dolorum perspiciatis.
+              Quidem ad officiis, totam adipisci sapiente dicta quae libero quos
+              aut provident quas mollitia odio voluptas, doloremque placeat
+              voluptates deserunt vero?
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+              inventore maxime sunt natus id repudiandae similique accusantium
+              exercitationem assumenda, et dicta aliquid voluptas earum laborum!
+              Id cum reprehenderit hic quidem!
+            </p>
+          </section>
+          <section data-anime="show-down">
+            <h2>Leão</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              tempore ut porro, alias illo numquam dolorem assumenda nobis
+              explicabo error culpa quisquam reprehenderit dignissimos maxime
+              placeat repellendus nihil nesciunt quam!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus voluptatibus laboriosam similique dolorum perspiciatis.
+              Quidem ad officiis, totam adipisci sapiente dicta quae libero quos
+              aut provident quas mollitia odio voluptas, doloremque placeat
+              voluptates deserunt vero?
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+              inventore maxime sunt natus id repudiandae similique accusantium
+              exercitationem assumenda, et dicta aliquid voluptas earum laborum!
+              Id cum reprehenderit hic quidem!
+            </p>
+          </section>
+        </div>
+      </section>
+      <section class="grid-section faq js-scroll" id="faq">
+        <h1 class="titulo">FAQ</h1>
+        <dl class="faq-lista js-accordion">
+          <dt>Qual a idade dos animais?</dt>
+          <dd>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+            harum, quia placeat amet explicabo blanditiis quam soluta veritatis?
+            Fuga, quod.
+          </dd>
+          <dt>Eles são fantásticos?</dt>
+          <dd>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
+            necessitatibus cumque accusamus laboriosam rem corrupti? Nemo at
+            pariatur officia ducimus!
+          </dd>
+          <dt>Qual a diferença?</dt>
+          <dd>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+            obcaecati ducimus atque, laborum facilis alias, deserunt rerum,
+            incidunt aut praesentium maxime tempore labore harum officiis?
+          </dd>
 
-        <section class="grid-section numeros js-scroll">
-            <h1 class="titulo">Números</h1>
-            <div class="numeros-grid">
-<!--                 <div class="numero-animal">
+          <dt>Como proteger?</dt>
+          <dd>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
+            deleniti sapiente omnis qui voluptatibus sint! Perferendis quisquam
+            nisi, veniam earum dolores in sequi officiis animi.
+          </dd>
+        </dl>
+      </section>
+
+      <section class="grid-section numeros js-scroll">
+        <h1 class="titulo">Números</h1>
+        <div class="numeros-grid">
+          <!--                 <div class="numero-animal">
                     <h3>Lobos</h3>
                     <span data-numero>4890</span>
                 </div>
@@ -131,37 +244,43 @@
                     <h3>Leões</h3>
                     <span data-numero>4335</span>
                 </div> -->
-            </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="grid-section contato js-scroll" id="contato">
-            <h1 class="titulo">Contato</h1>
-            <div class="mapa" data-tooltip aria-label="Endereço próximo ao estacionamento">
-                <img src="img/mapa.png">
-            </div>
-            <ul class="dados">
-                <li>jacksonsilva_fsa@outlook.com</li>
-                <li>Rua do Conde, nº 21</li>
-                <li data-semana="1,2,3,4,5" data-horario="8,18">Seg à Sex das 8 às 18</li>
-                <li>Doe <span class="btc-preco">0</span> bitcoin para nos ajudar</li>
-            </ul>
-        </section>
-        <footer class="copy">
-            <p>Todos os direitos reservados.</p>
-        </footer>
+      <section class="grid-section contato js-scroll" id="contato">
+        <h1 class="titulo">Contato</h1>
+        <div
+          class="mapa"
+          data-tooltip
+          aria-label="Endereço próximo ao estacionamento"
+        >
+          <img src="img/mapa.png" />
+        </div>
+        <ul class="dados">
+          <li>jacksonsilva_fsa@outlook.com</li>
+          <li>Rua do Conde, nº 21</li>
+          <li data-semana="1,2,3,4,5" data-horario="8,18">
+            Seg à Sex das 8 às 18
+          </li>
+          <li>Doe <span class="btc-preco">0</span> bitcoin para nos ajudar</li>
+        </ul>
+      </section>
+      <footer class="copy">
+        <p>Todos os direitos reservados.</p>
+      </footer>
     </div>
 
     <section class="modal-container" data-modal="container">
-        <div class="modal">
-            <button data-modal="fechar" class="fechar">X</button>
-            <form action="">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-                <label for="email">Senha</label>
-                <input type="password" name="senha" id="senha">
-                <button type="submit">Entrar</button>
-            </form>
-        </div>
+      <div class="modal">
+        <button data-modal="fechar" class="fechar">X</button>
+        <form action="">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+          <label for="email">Senha</label>
+          <input type="password" name="senha" id="senha" />
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
     </section>
-</body>
+  </body>
 </html>
