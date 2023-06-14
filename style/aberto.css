@@ -1,0 +1,20 @@
+[data-semana].aberto::after{
+    display: inline-flex;
+    content: '';
+    width: 6px;
+    background: #3f4;
+    border-radius: 50%;
+    height: 6px;
+    margin-left: 4px;
+    border: 2px solid #000;
+}
+[data-semana]::after{
+    display: inline-flex;
+    content: '';
+    width: 6px;
+    background: #e54;
+    border-radius: 50%;
+    height: 6px;
+    margin-left: 4px;
+    border: 2px solid #000;
+}
